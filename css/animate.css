@@ -1,0 +1,44 @@
+:root {
+	--animation-duration: 1.5s;
+}
+
+@keyframes scrolling-text {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(-125%);
+	}
+}
+
+@keyframes glowing-shadow {
+	0% {
+		box-shadow: initial;
+	}
+	50% {
+		box-shadow: 0px 0px 69px 51px rgba(0, 255, 255, 0.85);
+	}
+	100% {
+		box-shadow: initial;
+	}
+}
+
+#banner-text {
+	animation: scrolling-text 10s linear infinite;
+}
+
+#div-1:target {
+	animation: glowing-shadow var(--animation-duration) linear;
+}
+
+#div-2:target {
+	animation: glowing-shadow var(--animation-duration) linear;
+}
+
+#div-3:target {
+	animation: glowing-shadow var(--animation-duration) linear;
+}
+
+#div-4:target {
+	animation: glowing-shadow var(--animation-duration) linear;
+}
